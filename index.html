@@ -31,15 +31,17 @@
         <h1>Lista de tarefas</h1>
       </header>
       <form id="todo-form">
-        <input type="text" placeholder="O que vai fazer" id="todo-input" />
-        <button type="submit">
-          <i class="fa-thin fa-plus"></i>
-        </button>
+        <div class="" form-control>
+          <input type="text" placeholder="O que vai fazer" id="todo-input" />
+          <button type="submit">
+            <i class="fa-thin fa-plus"></i>
+          </button>
+        </div>
       </form>
       <form id="edit-form" class="hide">
         <p>Edite sua tarefa:</p>
         <div class="form-control">
-          <input type="text" id="edit-form" />
+          <input type="text" id="edit-input" />
           <button type="submit">
             <i class="fa-solid fa-check-double"></i>
           </button>
@@ -51,7 +53,7 @@
           <h4>Pesquisar:</h4>
           <form>
             <input type="text" id="search-input" placeholder="Buscar" />
-            <button id="" erase-button>
+            <button id="erase-button">
               <i class="fa-solid fa-delete-left"></i>
             </button>
           </form>

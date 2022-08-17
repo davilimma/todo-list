@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url(../img/gramado.jpg);
+  background: linear-gradient(180deg, #102f5e 5%, transparent);
   background-position: center;
   background-size: cover;
 }
@@ -21,7 +21,7 @@ button {
   border: 2px solid #102f5e;
   padding: 0.3rem 0.6rem;
   font-size: 1rem;
-  display: flex;
+  display: inline-flex;
   cursor: pointer;
   justify-content: center;
   align-items: center;
@@ -56,7 +56,7 @@ select {
 
 .todo-container {
   max-width: 450px;
-  margin: 3rem auto;
+  margin: 3rem auto 0;
   background-color: #fdfdfd;
   padding: 1.5rem;
   border-radius: 15px;
