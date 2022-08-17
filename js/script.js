@@ -36,6 +36,11 @@ const saveTodo = (text) => {
   todoInput.focus();
 };
 
+const toggleForms = () => {
+  editForm.classList.toggle("hide");
+  todoForm.classList.toggle("hide");
+  todoList.classList.toggle("hide");
+};
 //events
 todoForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -53,4 +58,18 @@ document.addEventListener("click", (e) => {
   if (targetEl.classList.contains("finish-todo")) {
     parentEl.classList.toggle("done");
   }
+
+  if (targetEl.classList.contains("remove-todo")) {
+    parentEl.remove();
+  }
+
+  if (targetEl.classList.contains("edit-todo")) {
+    toggleForms();
+  }
+});
+
+cancelEditBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  toggleForms();
 });
